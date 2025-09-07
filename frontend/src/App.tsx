@@ -19,7 +19,8 @@ const App: React.FC = () => {
   const [dragActive, setDragActive] = useState(false);
   const [progress, setProgress] = useState(0); // <-- Progress state
   const pollingInterval = useRef<number | null>(null);
-  const API_BASE_URL = 'http://localhost:8080';
+  const API_BASE_URL = 'https://techtoe.onrender.com';
+
 
   useEffect(() => {
     return () => {
